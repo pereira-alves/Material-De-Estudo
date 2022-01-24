@@ -1,2 +1,2 @@
 # Material De Estudo
- Conteúdo de aprendizado.
+ Conteúdo de aprendizado diversos.
