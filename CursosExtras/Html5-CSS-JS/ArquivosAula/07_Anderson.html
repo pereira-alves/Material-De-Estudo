@@ -31,56 +31,58 @@
                 font-size: 15px;
                 text-indent: 3px;
                 margin-top: 7px;
-                margin-bottom: 7px;
-                
+                margin-bottom: 7px;                
             
             }
-            .foto{
+            img{
                 width: 150px;
                 margin: 10px 10px;
-                float: right;
-                display: inline-block;
-                position: relative;
+                height: 150px;
+                display: block;
+                clear: both;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                
                 
             }
             header{
-                width: 80%;
-                height: 300px;
+                width: 100%;
+                height: auto;
                 border: 3px solid black;
                 margin-top: 30px;
-                padding-right: 30px;
-                padding-left: 10px;
+                padding: 10px;
+                background-color: rgb(229, 226, 226);
+                position: relative;
+                overflow: hidden;
             }
             section{
                 width: 80%;
                 padding-left: 10px;
             }
-            .apresentacao{
-                width: 100%;
-                height: 100%;
-            }
-            .foto{
-                width: 150px;
-                height: 150px;
+            .apresentacao p{
                 display: block;
+                clear: both;
+            }
+            .apresentacao a{
+                color: black;
             }
 
         </style>
     </head>
     <body>
-        <header>
-            <div class="apresentacao">
+        <div class="principal"></div>
+            <header class="apresentacao">
                 <h1><strong>ANDERSON PEREIRA ALVES</strong></h1>
-                <img src="Imagens/Anderson.jpg" class="foto" alt="">
+                <img src="Imagens/Anderson.jpg" alt="">
                 <P>Brasileiro, solteiro, 32 anos.</P>
                 <p>Nova Iguaçu, Rio de Janeiro/RJ</p>
-                <p>Contato:</p>
                 <p>Cel: (21)996101865 (WhatsApp)</p>
                 <p>Linkedin : <a href="https://www.linkedin.com/in/anderson-alves-1a614210a/">https://www.linkedin.com/in/anderson-alves-1a614210a/</a> </p>
                 <p>Instagram: <a href="https://www.instagram.com/obracompartilhada/">https://www.instagram.com/obracompartilhada/</a></p>
                 <p>E-mail: <E-mail>anderson.aza@gmail.com</E-mail></p>
-            </div>
-        </header>
+           </header>
+        </div>
         <section>
             <h2>Objetivo</h2>
             <p>Iniciar minha carreira na área de <em>T.I</em> especificamente em Front-End.</p>
