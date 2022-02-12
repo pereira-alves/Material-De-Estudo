@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=art, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: 3px solid red;
+            padding: 25px;
+        }
+        div::before{
+            content: "TEXTO BEFORE:";
+            background-color: #ccc;
+        }
+        div::after{
+            content: "TEXTO AFTER:";
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>Texto principal da div</div>
+
+    
+   
+    <article>
+        <p>ablabla</p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+    </article>
+    <hr>
+        
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="http//:Google.com" target="_blank">Link externo</a></li>
+        <li><a href="23_transicoessuaves.html" title="Veja Exercicio anterio" target="_blank">Link Interno</a></li>
+        <li><a href="23_transicoessuaves.html/qq.pdf" title="Veja Exercicio anterio" target="_blank">Link Interno</a></li>
+
+    </ul>
+
+</body>
+</html>

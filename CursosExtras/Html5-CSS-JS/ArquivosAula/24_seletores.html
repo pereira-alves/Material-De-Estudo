@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=art, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        article:nth-child(1) a{
+            color: red;
+        }
+        article:nth-child(3) > p{
+            color: red;
+        }
+        article:nth-child(5) h3 + p{
+            color: green;
+        }
+        article:nth-child(7) h3 ~ p{
+            color: orange;
+        }
+        article:not(.destaque){
+            color: aquamarine;
+        }
+
+
+        .destaque{
+            background: yellow;
+        }
+        a[href="#"]{
+            opacity: .2;
+        }
+        a[href^="http"]{
+            color: red;
+        }
+
+        a[title]{
+            color: green;
+        }
+        a[href$=".pdf"]{
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <article>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+    </article>
+    <hr>
+    <article>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+    </article>
+    <hr>
+    <article>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+    </article>
+    <hr>
+    <article>
+        <p>Antes do paragrafo não vai receber a formatação</p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+    </article>
+    <hr>
+    <article class="destaque">
+        <p>Antes do paragrafo não vai receber a formatação</p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+        <h3>titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur<a href="#">Link 1 <b>com negrito</b></a></p>
+        <br>
+        <br>
+        
+    </article>
+        
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="http//:Google.com" target="_blank">Link externo</a></li>
+        <li><a href="23_transicoessuaves.html" title="Veja Exercicio anterio" target="_blank">Link Interno</a></li>
+        <li><a href="23_transicoessuaves.html/qq.pdf" title="Veja Exercicio anterio" target="_blank">Link Interno</a></li>
+
+    </ul>
+
+</body>
+</html>

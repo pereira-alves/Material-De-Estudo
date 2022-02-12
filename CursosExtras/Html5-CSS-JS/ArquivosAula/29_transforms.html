@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .div1{
+            width: 150px;
+            height: 50px;
+            background-color: red;
+            transform: translate(50% ,50%);
+        }
+        .div2{
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+            position: relative;
+            left: 50%;
+        }
+        .div3{
+            width: 50%;
+            height: 150px;
+            background-color: green; 
+            overflow: hidden;
+            border: 3px solid black;
+        }
+        .div3-interna{
+            background: yellow;
+            transform: translate(80%, 25px);
+        }
+        .div4{
+            width: 50%;
+            height: 150px;
+            background-color: green; 
+            overflow: hidden;
+            border: 3px solid black;
+        }
+        .div4-interna{
+            background: yellow;
+            transform: rotate(15deg);
+        }
+        .div5{
+            width: 50%;
+            height: 150px;
+            background-color: green; 
+            overflow: hidden;
+            border: 3px solid black;
+        }
+        .div5-interna{
+            background: yellow;
+            transform: rotate(45deg);
+            transform-origin: left;
+        }
+        .div6{
+            width: 50%;
+            height: 150px;
+            background-color: green; 
+            overflow: hidden;
+            border: 3px solid black;
+        }
+        .div6-interna{
+            background: yellow;
+            transform: rotate(45deg) translate(50px);
+        }
+        .div7{
+            width: 50%;
+            height: 150px;
+            background-color: green; 
+            overflow: hidden;
+            border: 3px solid black;
+        }
+        .div7-interna{
+            background: yellow;
+            transform: translate(50px) rotate(45deg);
+        }
+        .div8{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transform: skewX(10deg) skewY(10deg);
+        }
+        .div9{
+            width: 100px;
+            height: 100px;
+            background: black;
+            transform: scale(.5) translate(50%);
+            transition: 1.5s;
+        }
+        .div9:hover{
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        div 1
+    </div>
+    <div class="div2">
+        div 2
+    </div>
+    <hr>
+    <div class="div3">
+        <div class="div3-interna">Conteudo Quaquer</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi deleniti fugiat laudantium voluptates neque, illum beatae dolore labore saepe in eos eaque! Explicabo aspernatur asperiores voluptate, sint quis animi!</p>
+    </div>
+    <hr>
+    <div class="div4">
+        <div class="div4-interna">Conteudo Quaquer</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi deleniti fugiat laudantium voluptates neque, illum beatae dolore labore saepe in eos eaque! Explicabo aspernatur asperiores voluptate, sint quis animi!</p>
+    </div>
+    <hr>
+    <div class="div5">
+        <div class="div5-interna">Conteudo Quaquer</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi deleniti fugiat laudantium voluptates neque, illum beatae dolore labore saepe in eos eaque! Explicabo aspernatur asperiores voluptate, sint quis animi!</p>
+    </div>
+    <hr>
+    <div class="div6">
+        <div class="div6-interna">Conteudo Quaquer</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi deleniti fugiat laudantium voluptates neque, illum beatae dolore labore saepe in eos eaque! Explicabo aspernatur asperiores voluptate, sint quis animi!</p>
+    </div>
+    <hr>
+    <div class="div7">
+        <div class="div7-interna">Conteudo Quaquer</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi deleniti fugiat laudantium voluptates neque, illum beatae dolore labore saepe in eos eaque! Explicabo aspernatur asperiores voluptate, sint quis animi!</p>
+    </div>
+    <hr>
+    <div class="div8">div 8</div>
+    
+    <div class="div9">div 9</div>
+    <br>
+    <br>
+
+</body>
+</html>
