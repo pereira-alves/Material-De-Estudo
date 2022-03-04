@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=vgyV1_vH2e_pWq1fP1pOZbKjZt7OVBpJ8y9O2RNQNP3pf0dIbs1UvuGH9-Z13qn4gzhOc_apux764ruIL2noQs_Iot7IpCAzi0-Rw5iOy10ifBrw4y7zXfrfmKGmCumyHGbGvq3Wwd8REbwzfeZkXuNhSWbQjGZXxYFy-fWkAmpKEEfxbm28xSZmA9sJyOdcal0QYV5kiMIaRO-liwrzmszJevfHf9TMZJC2y9XRL7TDL_MUnGsNIlavBZxptmTbmNJKLQLALkbsTG7kwo0Fw6hDvCqTgaHJzZvhoWexTuTvGKVIAHdX0Kpt01sTWkqWlP9IPHCNMpEvztAXk2qohm9bEE7reRaPkHE0iaJ2C-OPNYBLv848sNBYVFNs8_UVlSy7Kc5tmqDFgXxBO-ImvTcJNnZpyDhN0MyjCTvS9TmMc-P4rCwQtkd5NvSE4Gt0zWdLJ2KokbKbYl_vt0kS0VsJiYtuZ8uVH-wxBQtAYZEsF1lzZv8oVo9YKLIGYbOS2bNpcnMBju1Y5TAInVViorU3edCZf9AXwQ0l6g5h-ICl29L8Tp44kfkGdBi9QK7DobqpFRb14YlEeJPD1XoaWTqv2KS61vXd-iM1Qvu-vKGPVic_KtRKpa1_8De0l75TMJ7pnnMervmOXvk41WlTXUcG2i_W-TtLg1U14-NVbNYecQo7vsZlRZM1DR1fr3gNLYLQu9cRLI8WzMKYHHm3AXbDFE55QWOaszzBJU2XreOGxSV32qrz8_T07MXm2pPPhEctSkyLgvsoh3hZVfxh12AvIcEwTeae7Pgod6IUr7s" charset="UTF-8"></script><style>
+            .gridContainer{
+                width: 300px;
+                background: #ccc;
+            }
+
+            .gridItem{
+                background: #999;
+                
+                font-size: 2em;
+                font-family: sans-serif;
+            }
+            .gridItem:nth-child(even){
+                background: #999;
+                color: white;
+            }
+            .gridItem:nth-child(odd){
+                background: #eee;
+            }
+
+            /*GRID*/
+
+            .gridContainer{
+                display: grid;
+                grid-template-columns: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Grid Layout</h2>
+        
+        
+        <div class="gridContainer">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
+        
+        
+    </body>
+</html>

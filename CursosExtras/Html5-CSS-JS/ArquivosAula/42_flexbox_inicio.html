@@ -1,0 +1,201 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=SZAMK6teFwN4B6yXwIftRw8rgOng4k4N2dMKRkLoXjndhU3nTotJDTjo068BKG3NCYdppXVgPhAhnx6_zN6OGEM0wwTcZ5a_5VDNIrukd8PEKocjW05GR23CzYUylgJfYzZFxifs2498YL5A4Y6q8AUpsJ3cT4QrjWaUEK6MFK23YBnGH-LeZKp6BO2NGEbSWllnPBm643CAppmerR5FJDJK8ea0c1cLG7u4MsZNcZv3L-VfOWmuGidZvwFlPcYc8HgHim7knudUCc1S_rNebGgPkC5HhzS1MdCYuG-Xnsd8G3MUsn6MRGvFq4J0VjKP7_x0Xh8tKODpW2LJgJHahYkzYh0F8e0a-YztIywOKur9AxZX4Hm5gUVUKl2Yzwju27AvGSIIWBw6zE2sXn4zTCpy5xqCZOwuzduJQYux8CP6cgwFAsTGaamKWfXEUYCzE-eheHhW--7NqUenZZq-IngJHBvM9yQSnbEPvHChAhVDNmcfhdgUw7KlxeT6FIKcj8iuGkKhkQnF9ttyLy1OuKvfeQuIHsGxBtoIyR33TPGcZpO_R-whoJYp24F6c54CL4xBTTaWDnEQUwR0njGqeE9ywpck43sKVBVJ64mWgsfS9Ai18_je6WdvNg8lM3dhuqwOLOBGdEw9ZhO_n7ikJyj0gtKEKSIsswpLjgQMkk2sW36tZS9jnP_rDer6xi9eoEvbK84H8Ftk1Zu8gF0SkoA5to6BbZpjWEuLoq_x6wl4tiCteDFtn_0suywKvOJdA1H2fn9N8aEc5pPFRugPUED93eVq7ynGUljB7o85Woc" charset="UTF-8"></script><style>
+            .flexbox{
+                height: 250px;
+                border: 1px solid red;
+                display: flex;
+                margin-bottom: 15px;
+            }
+            
+            .flexbox div{
+                background: orange;
+                width: 300px;
+                margin: 15px;
+            }
+
+            .flexbox:nth-child(4){
+                flex-direction: row;
+                /*flex-wrap: wrap;*/
+                flex-flow: row nowrap;
+            }
+            .flexbox:nth-child(5){
+                justify-content: space-between;
+            }
+            .flexbox:nth-child(5) div{
+                width: 20px;
+            }
+            .flexbox:nth-child(6){
+                align-items: center;
+                justify-content: center;
+            }
+            .flexbox:nth-child(7){
+                align-items: baseline;
+                justify-content: center;
+            }
+            .flexbox:nth-child(8){
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                align-content: flex-start;
+            }
+            .flexbox:nth-child(8) div{
+                width: 100px;
+            }
+            .flexbox:nth-child(9){
+                justify-content: center;
+                align-items: center;
+            }
+            .flexbox:nth-child(9) div{
+                background: green;
+                flex-basis: 30px;
+                height: 50px;
+            }
+            .flexbox:nth-child(10){
+                justify-content: center;
+                align-items: center;
+            }
+            .flexbox:nth-child(10) div{
+                background: yellow;
+                flex-basis: 30px;
+                height: 50px;
+            }
+            .flexbox:nth-child(10) div:nth-child(2){
+                flex-grow: 1;
+            }
+            .flexbox:nth-child(10) div:nth-child(4){
+                flex-grow: 2;
+            }
+            .flexbox:nth-child(11) div{
+                background: yellow;
+                flex-basis: 100px;
+                height: 50px;
+                margin: 5px;
+            }
+            .flexbox:nth-child(11) div:nth-child(2){
+                flex-shrink: 2;
+            }
+            .flexbox:nth-child(11) div:nth-child(4){
+                /*flex-shrink: 5;*/
+                /* grow shrink basis */
+                flex: 1 0 100px;
+            }
+            .flexbox:nth-child(12) div:nth-child(2){
+                order: 3;
+            }
+            .flexbox:nth-child(12) div:nth-child(4){
+                order: 2;
+            }
+            .flexbox:nth-child(12) div:nth-child(3){
+                order: 4;
+            }
+            .flexbox:nth-child(13){
+                align-items: flex-start;
+            }
+            .flexbox:nth-child(13) div:nth-child(2){
+                align-items: flex-start;
+                align-self: flex-end;
+            }
+            .flexbox:nth-child(13) div:nth-child(3){
+                align-items: flex-start;
+                align-self: center;
+            }
+            .flexbox:nth-child(13) div:nth-child(1){
+                align-items: flex-start;
+                align-self: stretch;
+            }
+            .flexbox:nth-child(14){
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: column;
+                height: 500px;
+            }
+            .flexbox:nth-child(14) div{
+                flex-basis: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Display Flex</h2>
+        <p>Acomodar ou distribuir elementos de modo fácil</p>
+        <p>Ajuda a centralizar na vertical</p>
+        
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2" style="font-size: 3em;">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+    </body>
+</html>
