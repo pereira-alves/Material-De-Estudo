@@ -1,0 +1,83 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=McbyrWPrJCU_jbkmvAjlVPxTxT0LaFsFE68FM6oeJJyydaQyib84Z6RZFaJxXdY_V0ZfpiYvT_mjdW8CTtyavY7FbtYXo1MYl_jMIGNTaSeXbAhLfYJxqLgklgzVISw8dijXKbA_KDM2TzHhH7q22ZaG-gMkIpMkICcDZbQHipr92HysXWtiI5iK70aQr92ZDiExz93Q3uhnm1eRE7oSDM_0oNkSB3Gv_4Foki6Temz2VMvZ-EDMoYqqFR_prEEZnsoDmGCT5U6bSL5AGFVcRfSGZequOPwZkTuExHzAok3q82X-lmH3ArNgyIcic1rgBHEEB2TsiFXK4CR7l763-S5zLh4dsSFjFwq9_aGVzNvxaaewxUCLL8gps2UDzI0af9UKWVYEOFjEv8aov3WM6wo5gBbgJwCZmLBpAe4X-BcbxBapUxVjbMu1BgeKAnAyL5NytjK0pmGk3GaM7dBZSrHlLMcbfj2_w0M5kz1OtPgPSPSgUVSH922TgLldBVFVRQmkOi0VGT0zKzVroxECFqfaQ-PF4qNB-pgzfHb8ldkBH5NM0Gha_fyM30B6ilx-LAFYf2oPBBKEdS1GakSpO4AT_QP8njZ_QYt-k5UB1SVfl-dptduc6zr_KTIcvbdU1Hin8eK0thT8vOaB4_DA3SdTXZbZtvZruE3DrwOhG7s2kbOt-3bTWBq1RLHNYlrwvCRUBpsCCOQ2EpjKc_Ljv88W5JaP29_PK1TMbl7sLM9CE7o3l5PBc_YeN-x96jNh_fE7LoOn2Ig-ngOxEMq92xKa3XJl30agmm3ZTY1oYTU" charset="UTF-8">
+        </script>
+
+        <style>
+            .gridContainer{
+                width: 90%;
+                background: #ccc;
+                margin: 30px auto;
+            }
+
+            .gridItem{
+                background-color: orange;
+                padding: 15px;
+                font-family: sans-serif;
+            }
+
+            /* GRID */
+            .gridContainer{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 100px 50px 1fr 50px;
+                grid-gap: 20px;
+
+                grid-template-areas: 
+                "header header header"
+                "nav    nav    aside"
+                "main   main   aside"
+                "footer footer footer";
+            }
+
+            .header{
+                /*grid-column: 1 / -1; */
+                grid-area: header;
+            }
+            .nav{
+                /* grid-column: 1 / 3; */
+                grid-area: nav;
+            }
+            .aside{
+                /* grid-row: 2 / -1;
+                grid-column: 3 / 4; */
+                grid-area: aside;
+            }
+            .main{
+                /* grid-column: 1 / 3; */
+                min-height: 200px; 
+                grid-area: main;
+            }
+            .footer{
+                /* grid-column: 1 / 3;
+                grid-row: 4 / 5; */
+                grid-area: footer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>Grid Layout</h2>
+        
+        
+        <div class="gridContainer">
+            <header class="header gridItem">header</header>
+            <nav class="nav gridItem">nav</nav>
+            <aside class="aside gridItem">aside</aside>
+            <main class="main gridItem">
+                main
+            </main>
+            <footer class="footer gridItem">footer</footer>
+        </div>
+        
+        
+    </body>
+</html>
