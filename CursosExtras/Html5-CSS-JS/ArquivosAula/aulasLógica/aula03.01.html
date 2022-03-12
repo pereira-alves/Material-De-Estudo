@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação JavaScript</title>
+</head>
+<body>
+    <h1>Lógica de programação JavaScript</h1>
+
+    <script>
+
+        // EXEMPLO COM WHILE 
+
+        /*var res = 's'
+        while(res == 's'){
+            var n = prompt('digite um número para ver sua tabuada até 10 ')
+            n = parseInt(n)
+            var indice = 1;
+            while(indice <= 10){
+            document.write(n + ' x ' + indice + ' = ' + (n * indice) + ' <br>');
+            indice = indice +1;
+            }
+            document.write('<br>')
+            var res = (prompt('Deseja saber mais alguma ? s/n'))
+        }
+        document.write('Encerrando')*/
+
+        // EXEMPLO COM FOR 
+
+        var n = parseInt(prompt('digite um número para ver sua tabuada até 1000 '))
+        for(i=0; i<=1000; i++){
+            document.write(n + ' x ' + i + ' = ' + (n * i) + ' <br>')
+            if(i%10==0 && i > 0){
+                document.write('<hr>')
+            }
+            
+        }
+        document.write('Encerrando')
+        
+    </script>
+</body>
+</html>

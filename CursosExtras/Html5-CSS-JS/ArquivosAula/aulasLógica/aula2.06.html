@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação JavaScript</title>
+</head>
+<body>
+    <h1>Lógica de programação JavaScript</h1>
+
+    <script>
+
+      var p1 = parseInt(prompt('Jogador um digite um número: '))
+
+      var p2 = parseInt(prompt('Jogador dois digite um número:'))
+
+      if(p1 == p2){
+          alert('Vocês empataram')
+      }else{
+          var n = parseInt(Math.random() *2)
+          alert(n)
+          if(n == 0){
+              alert('O menor valor vence')
+            if(p1 < p2){
+                alert('Jogador 1 ganhou')
+            }else{
+                alert('Jogador 2 ganhou')
+            }
+          }else{
+              alert('O maior valor vence')
+            if(p1 > p2){
+                alert('Ganhou o jogador 1')
+            }else{
+                alert('Ganhou o jogador 2')
+            }
+          }
+      }
+    </script>
+</body>
+</html>
