@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação JavaScript</title>
+    <style>
+        #output{
+            text-align: center;
+            font-size: 56px;
+        }
+        button{
+            margin-right: 15px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lógica de programação JavaScript</h1>
+
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+
+    <div id="output"></div>
+
+    <script>
+        var n1 = parseFloat(prompt('Digite um número'))
+
+        escreve();
+
+        function escreve(){
+            var output = document.querySelector('#output');
+            output.innerHTML = n1;
+        }
+        function calcular(simbolo){
+            var n = parseFloat(prompt('digite outro número'));
+            n = parseFloat(n);
+            switch(simbolo){
+                case '+':
+                    n1 += n;
+                    break;
+                case '-':
+                    n1 -= n;
+                    break;
+                case '*' :
+                    n1 *= n;
+                    break;
+                case '/':
+                    n1 /= n;
+                    break;
+            }
+            escreve();
+        }
+    </script>
+</body>
+</html>
